@@ -1,0 +1,110 @@
+#root{
+  min-height: 100%;
+}
+.App {
+  text-align: center;
+}
+.color{
+  z-index: -1;
+  position: fixed;
+  background-size: cover;
+  width: 100%; 
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+#background {
+  background-image: url('../../../public/clouds.png');
+  width: 100%; 
+  height: 100%; 
+  display: flex;
+  justify-items: stretch;
+  flex-direction: column;
+  justify-content: center;
+} 
+
+@font-face {
+  font-family: "Shnobel";
+  font-style: normal;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Shnobel"),
+       url("/public/fonts/Shnobel-Regular.otf") format("otf"),
+       
+}
+.stretch {
+  width:130%;
+  height:130%;
+}
+
+#clouds{
+  position: fixed;
+  top: 100px;
+  left: 200px;
+}
+
+
+.DF{
+  display: flex;
+}
+.FDC{
+  flex-direction: column;
+}
+.JCS{
+  justify-content: flex-start;
+}
+.JCC{
+  justify-content: center;
+}
+.JCSB{
+  justify-content: space-between;
+}
+.JCSA{
+  justify-content: space-around;
+}
+.AIC{
+  align-items: center;
+}
+.ASC{
+  align-self: center;
+}
+.tal{
+  text-align: left;
+}
+.w100{
+  width: 100%;
+}
+.pr{
+  position: relative;
+}
+.cp{
+  cursor: pointer;
+}
+
+.mla{
+  margin-left: auto;
+}
+.mt20{
+  margin-top: 20px;
+}
+.mb20{
+  margin-bottom: 20px;
+}
+.ml20{
+  margin-left: 20px;
+}
+.mr20{
+  margin-right: 20px;
+}
+.mr5{
+  margin-right: 5px;
+}
+.m0{
+  margin: 0;
+}
+.p0{
+  padding: 0;
+}
+.z100{
+  z-index: 100;
+}

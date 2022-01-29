@@ -1,0 +1,36 @@
+.finalMain{
+    position: absolute;
+    top: -160px;
+    padding-top: -220px;
+    width: 950px;
+    left: 50%;
+    margin-left: -475px;
+}
+.finalGround{
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.blockButtonFinal{
+margin-left: -60px;
+height: 460px;
+align-items: flex-end;
+}
+@media only screen and (max-width: 480px){
+    .finalMain{
+        width: 480px;
+        margin-left: -240px;
+        top: -85px;
+    }
+    .finalGround{
+        top: 330px;
+    }
+    .blockButtonFinal{
+        zoom: 0.8;
+        height: 280px;
+        margin-left: -30px;
+    }
+}

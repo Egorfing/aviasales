@@ -1,0 +1,18 @@
+.buttonSocial{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+}
+
+.imgIcon{
+    width: 46px;
+    height: 46px; 
+}
+.iconButtonImg{
+    position: absolute;
+    width: 23px;
+    left: 11px;
+    top: 14px;
+}

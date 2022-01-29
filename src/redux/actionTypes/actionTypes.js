@@ -1,0 +1,4 @@
+export const UPDATE_USER = 'UPDATE_USER'
+export const UPDATE_SHARED = 'UPDATE_SHARED'
+export const COMPLETE_UPDATE = 'COMPLETE_UPDATE'
+export const UPDATE_EMAIL = 'UPDATE_EMAIL'
