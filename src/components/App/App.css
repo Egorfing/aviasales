@@ -23,15 +23,16 @@
   justify-content: center;
 } 
 
-@font-face {
-  font-family: "Shnobel";
+/* @font-face {
+  font-family: "Shnobel-Regular";
   font-style: normal;
-  font-weight: 400;
-  /* Браузер сначала попробует найти шрифт локально */
-  src: local("Shnobel"),
-       url("/public/fonts/Shnobel-Regular.otf") format("otf"),
+  font-weight: 600;
+  src: url("/fonts/Shnobel-Regular.ttf") format(".ttf"),
+       url("/fonts/Shnobel-Regular.otf") format(".otf"),
+       url("/fonts/Shnobel-Regular.woff") format(".woff"),
+       url("/fonts/Shnobel-Regular.woff2") format(".woff2"),
        
-}
+} */
 .stretch {
   width:130%;
   height:130%;

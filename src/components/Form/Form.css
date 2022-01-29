@@ -1,10 +1,11 @@
+
 .form{
     width: 370px;
     margin: 40px;
 }
 .headSnobel{
     font-size: 50px;
-    font-family: 'Shnobel';
+    font-family:'Shnobel-Regular';
     color: #FFFFFF;
 }
 .check:checked{
@@ -40,6 +41,7 @@
     border-radius: 6vw;
     height: 55px;
     width: 200px;
+    margin-bottom: 70px;
 }
 input.sendButton:disabled{
     border: 1px solid #FFFFFF;
