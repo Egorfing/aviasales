@@ -5,8 +5,18 @@
 }
 .headSnobel{
     font-size: 50px;
-    font-family:'Shnobel-Regular';
+    font-family:'Shnobel';
     color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 0;
+    align-items: center;
+}
+_::-webkit-full-page-media, _:future, :root .safari_only {
+margin-left: -70px;
+width: 300px;
+  }
+h2.headSnobel.text{
+    margin-top: 0;
 }
 .check:checked{
     display: none;
@@ -74,7 +84,7 @@ input.sendButton:disabled{
     .blockButton{
         width: 230px;
     }
-    div.text{
+    h2.text{
         font-family: 'Open Sans', sans-serif;
         font-size: 17px; 
         margin: 0 5px;
@@ -87,5 +97,9 @@ input.sendButton:disabled{
     input.sendButton{
         margin-top: 5px;
     }
+    _::-webkit-full-page-media, _:future, :root .safari_only {
+        margin-left: 0;
+        width: auto;
+          }
     
 }

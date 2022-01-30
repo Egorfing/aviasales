@@ -23,16 +23,6 @@
   justify-content: center;
 } 
 
-/* @font-face {
-  font-family: "Shnobel-Regular";
-  font-style: normal;
-  font-weight: 600;
-  src: url("/fonts/Shnobel-Regular.ttf") format(".ttf"),
-       url("/fonts/Shnobel-Regular.otf") format(".otf"),
-       url("/fonts/Shnobel-Regular.woff") format(".woff"),
-       url("/fonts/Shnobel-Regular.woff2") format(".woff2"),
-       
-} */
 .stretch {
   width:130%;
   height:130%;
@@ -77,6 +67,9 @@
 }
 .pr{
   position: relative;
+}
+.br{
+  border: 1px solid red;
 }
 .cp{
   cursor: pointer;

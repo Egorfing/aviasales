@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import './Form.css'
 import SocialIcon from '../SocialIcon/SocialIcon';
 import { UPDATE_USER, UPDATE_EMAIL, COMPLETE_UPDATE } from '../../redux/actionTypes/actionTypes';
+import Header from '../Header/Header';
 
 
 function Form() {
@@ -69,20 +70,22 @@ function Form() {
                     type: COMPLETE_UPDATE,
                     payload: true
                 })
-
+                navigate('/final')
             })
     }
 
     return (
+        <div>
+            <Header className='mb20' propstyle='header'/>
         <div className='w100 DF FDC AIC'>
             <div className='DF FDC AIC form'>
-                <div className='headSnobel mt20'>Чтобы выиграть путешествие</div>
+                <h1 className='headSnobel mt20 safari_only '>Чтобы выиграть путешествие</h1>
                 <div className='DF FDC w100 mt20 mobileC'>
                     <div className='DF AIC mb20'>
                         {user.shared ?
                             <img className='mr20 imgCheck' src='./check.png' alt='checkbox' /> :
-                            <div className='headSnobel mr20 text'>1.</div>}
-                        <div style={{ opacity: opacity }} className='info ml20 text'>Поделись с друзьями:</div>
+                            <h2 className='headSnobel mr20 text'>1.</h2>}
+                        <label style={{ opacity: opacity }} className='info ml20 text'>Поделись с друзьями:</label>
                     </div>
                     <div style={{ opacity: opacity }} className='DF JCSB ASC blockButton'>
                         <SocialIcon color='#45668E' icon='vk.png' link='https://vk.com/share.php?url=kandidat.aviasales.ru/' />
@@ -93,8 +96,8 @@ function Form() {
                 </div>
                 <div className='DF FDC w100 mobileC'>
                     <div className='DF AIC'>
-                        <div className='headSnobel mr5 text'>2.</div>
-                        <div className='info ml20 text'>Оставь почту:</div>
+                        <h2 className='headSnobel mr5 text'>2.</h2>
+                        <label className='info ml20 text'>Оставь почту:</label>
                     </div>
                     <form onSubmit={submitForm}>
                         <input type='text' className='emailInput ASC mb20 z100' value={email} onChange={(e) => setEmail(e.target.value)} name='email' />
@@ -102,6 +105,7 @@ function Form() {
                     </form>
                 </div>
             </div>
+        </div>
         </div>
 
     );

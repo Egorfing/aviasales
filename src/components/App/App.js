@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Route, Routes} from "react-router-dom"
 import './App.css';
 import Final from "../Final/Final";
 import Form from '../Form/Form';
-import Header from '../Header/Header';
 
 export const PATHES = {
   PATH_TO_MAIN: "/",
@@ -16,7 +15,6 @@ function App() {
         <div>
           <img className='color' src='./color.png' alt='background'/>
         </div>
-        <Header className='mb20' />
         <div  id='background'>
         <Routes>
           <Route exact path={PATHES.PATH_TO_FINAL} element={<Final/>}/>
